@@ -5,6 +5,5 @@ varying vec2 v_Uv;
 
 void main() {
     v_Uv = a_Uv;
-    // gl_Position = vec4(a_Pos, 1.0);
     gl_Position = u_ModelViewProj * vec4(a_Pos, 1.0);
 }
